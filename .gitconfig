@@ -45,7 +45,7 @@
 	rename = true
 [alias]
 	st = status
-	lg = log --graph --date=relative --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an) %ad%Creset'
+	lg = log --graph --date=relative --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cblue(%an)%Creset %Cgreen%ad%Creset'
 	# show all branches
 	br = branch -av
 	churn = !git log --all -M -C --name-only --format='format:' "$@" | sort | grep -v '^$' | uniq -c | sort | awk 'BEGIN {print "count,file"} {print $1 "," $2}'
