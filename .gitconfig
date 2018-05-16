@@ -1,0 +1,77 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Rodolphe Blancho
+	email = rodolphe.blancho@gmail.com
+[core]
+	editor = nvim
+	autocrlf = input
+[color]
+	ui = auto
+[color "branch"]
+	current = yellow bold
+	local = green bold
+	remote = cyan bold
+[color "diff"]
+	meta = yellow bold
+	frag = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[color "status"]
+	added = yellow bold
+	changed = cyan bold
+	untracked = red bold
+[merge]
+	tool = vimdiff
+	# Display common-ancestor blocks in conflict hunks
+	conflictStyle = diff3
+[mergetool]
+	prompt = true
+	# Clean up backup files created by merge tools on tool exit
+	keepBackup = false
+	# Clean up temp files created by merge tools on tool exit
+	keepTemporaries = false
+	# Put the temp files in a dedicated dir anyway
+	writeToTemp = true
+[mergetool "vimdiff"]
+	cmd = nvim -d $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
+[difftool]
+	prompt = false
+[diff]
+	tool = vimdiff
+	# Use better, descriptive initials (c, i, w) instead of a/b.
+	mnemonicPrefix = true
+	# Show renames/moves as such
+	rename = true
+[alias]
+	st = status
+	lg = log --graph --date=relative --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an) %ad%Creset'
+	# show all branches
+	br = branch -av
+	churn = !git log --all -M -C --name-only --format='format:' "$@" | sort | grep -v '^$' | uniq -c | sort | awk 'BEGIN {print "count,file"} {print $1 "," $2}'
+	unstage = reset HEAD --
+	# List all tags
+	tags = tag -l
+[log]
+	abbrevCommit = true
+	follow = true
+[push]
+	# Default push should only push the current branch to its push target, regardless of its remote name
+	default = upstream
+	# When pushing, also push tags whose commit-ishs are now reachable upstream
+	followTags = true
+[rerere]
+	autoupdate = true
+	enabled = true
+[tag]
+	# Sort tags as version numbers whenever applicable, so 1.10.2 is AFTER 1.2.0.
+	sort = version:refname
+[versionsort]
+	prereleaseSuffix = -pre
+	prereleaseSuffix = .pre
+	prereleaseSuffix = -beta
+	prereleaseSuffix = .beta
+	prereleaseSuffix = -rc
+	prereleaseSuffix = .rc
+[credential]
+	helper = osxkeychain
