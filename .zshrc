@@ -86,6 +86,8 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+export EDITOR=nvim
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -99,5 +101,8 @@ alias config='/usr/bin/git --git-dir=/Users/rody/.cfg/ --work-tree=/Users/rody'
 alias show_hidden='defaults write com.apple.Finder AppleShowAllFiles YES && killall Finder'
 alias hide_hidden='defaults write com.apple.Finder AppleShowAllFiles NO && killall Finder'
 
+# VIM mode
+bindkey -v
+bindkey -M viins 'jk' vi-cmd-mode
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
