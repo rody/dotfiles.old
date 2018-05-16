@@ -37,4 +37,9 @@ if has("autocmd")
     autocmd FileType go setlocal tabstop=4 smartindent
     autocmd FileType go highlight WhiteSpace guifg=#3a3a3a
   augroup END
+
+  augroup gitconfig
+    autocmd!
+    autocmd FileType gitconfig setlocal tabstop=4 smartindent noexpandtab
+  augroup END
 endif
