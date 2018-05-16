@@ -95,5 +95,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias config='/usr/bin/git --git-dir=/Users/rody/.cfg/ --work-tree=/Users/rody'
+# Show/Hide hidden files in Finder
+alias show_hidden='defaults write com.apple.Finder AppleShowAllFiles YES && killall Finder'
+alias hide_hidden='defaults write com.apple.Finder AppleShowAllFiles NO && killall Finder'
+
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
