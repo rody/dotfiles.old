@@ -62,6 +62,7 @@ ZSH_THEME="agkozak"
 plugins=(
   git
   vi-mode
+  z
 )
 
 source $ZSH/oh-my-zsh.sh
