@@ -61,8 +61,16 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'othree/csscomplete.vim'
 
   " Golang {{{
-  Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
-  Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
+  if executable('go')
+    Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+    Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
+  endif
+
+  " Rust {{{
+  if executable('rustc')
+    Plug 'rust-lang/rust.vim', { 'for': 'rust' }
+    Plug 'sebastianmarkow/deoplete-rust', { 'for': 'rust' }
+  endif
 
   " JSON {{{
   Plug 'elzr/vim-json'
