@@ -3,8 +3,13 @@ if exists('g:plugs["ale"]')
         \ 'javascript': ['eslint'],
         \ 'css': ['prettier']
         \ }
-  let g:ale_sign_error = '•'
-  let g:ale_sign_warning = '•'
+
+  let g:ale_linters = {
+        \ 'rust': ['cargo']
+        \ }
+
+  let g:ale_sign_error = '✖︎'
+  let g:ale_sign_warning = '▲'
   hi link ALEErrorSign    Error
   hi link ALEWarningSign  Warning
 endif
