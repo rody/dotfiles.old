@@ -67,6 +67,7 @@ brew "pwgen"
 # casks ------------------------------------------------------------------------
 cask "avidemux"
 cask "blender"
+cask "natron"
 cask "docker"
 cask "etcher"
 cask "firefox"
