@@ -4,6 +4,7 @@ syntax on
 set nobackup
 set nowritebackup
 set noswapfile
+set noshowmode  "Don't show current mode in command line (required for echodoc)
 
 set relativenumber
 set number

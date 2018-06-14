@@ -34,8 +34,21 @@ if has("autocmd")
 
   augroup golang
     autocmd!
-    autocmd FileType go setlocal tabstop=4 smartindent
+    autocmd FileType go setlocal tabstop=4 smartindent noexpandtab sw=4 sts=4
     autocmd FileType go highlight WhiteSpace guifg=#3a3a3a
+
+    autocmd FileType go nmap <leader>b <Plug>(go-build)
+    autocmd FileType go nmap <leader>r <Plug>(go-run)
+    autocmd FileType go nmap <leader>t <Plug>(go-test)
+    autocmd FileType go nmap <Leader>c <Plug>(go-coverage-toggle)
+    autocmd FileType go nmap <Leader>i <Plug>(go-info)
+
+    autocmd FileType go nmap K <Plug>(go-doc)
+
+    autocmd Filetype go command! -bang A  call go#alternate#Switch(<bang>0, 'edit')
+    autocmd Filetype go command! -bang AV call go#alternate#Switch(<bang>0, 'vsplit')
+    autocmd Filetype go command! -bang AS call go#alternate#Switch(<bang>0, 'split')
+    autocmd Filetype go command! -bang AT call go#alternate#Switch(<bang>0, 'tabe')
   augroup END
 
   augroup gitconfig

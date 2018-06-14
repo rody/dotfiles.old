@@ -25,13 +25,19 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'junegunn/vim-easy-align'
 
   " Autocomplete {{{
-  Plug 'roxma/nvim-completion-manager'
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'fszymanski/deoplete-emoji'
+  Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
+
+  " splitjoin
+  Plug 'AndrewRadev/splitjoin.vim'
+
+  " Display function signature in the command line after completion
+  Plug 'Shougo/echodoc.vim'
 
   " Snippets {{{
-  Plug 'Shougo/neosnippet'
-  Plug 'Shougo/neosnippet-snippets'
+  " Plug 'Shougo/neosnippet'
+  " Plug 'Shougo/neosnippet-snippets'
 
   " Git {{{
   Plug 'tpope/vim-fugitive'
@@ -41,35 +47,34 @@ call plug#begin('~/.local/share/nvim/plugged')
 
   " Javascript {{{
   if executable('npm')
-    Plug 'ternjs/tern_for_vim' , { 'do': 'npm install && npm install tern' , 'for': ['javascript', 'javascript.jsx'] }
+    Plug 'ternjs/tern_for_vim', { 'do': 'npm install && npm install -g tern'}
+    Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
   endif
-  Plug 'carlitux/deoplete-ternjs' ", { 'for': ['javascript', 'javascript.jsx'] }
-  Plug 'wokalski/autocomplete-flow'
-  Plug 'othree/jspc.vim' ", { 'for': ['javascript', 'javascript.jsx'] }
   Plug 'pangloss/vim-javascript'
   Plug 'mxw/vim-jsx'
 
   " Typescript
   Plug 'HerringtonDarkholme/yats.vim'
-  Plug 'mhartington/nvim-typescript'
+  Plug 'mhartington/nvim-typescript', { 'do': './install.sh' }
 
   " HTML {{{
   Plug 'othree/html5.vim'
   Plug 'mattn/emmet-vim'
 
   " CSS {{{
-  Plug 'othree/csscomplete.vim'
+  " Plug 'othree/csscomplete.vim'
 
   " Golang {{{
   if executable('go')
     Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
-    Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
+    Plug 'mdempsky/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
+    Plug 'zchee/deoplete-go', { 'do': 'make'}
   endif
 
   " Rust {{{
   if executable('rustc')
-    Plug 'rust-lang/rust.vim', { 'for': 'rust' }
-    Plug 'sebastianmarkow/deoplete-rust', { 'for': 'rust' }
+    Plug 'rust-lang/rust.vim'
+    Plug 'sebastianmarkow/deoplete-rust'
   endif
 
   " JSON {{{
@@ -104,4 +109,8 @@ source ~/.config/nvim/config/plugins/html5.vim
 source ~/.config/nvim/config/plugins/vim-jsx.vim
 source ~/.config/nvim/config/plugins/nerdtree.vim
 source ~/.config/nvim/config/plugins/fzf.vim
+source ~/.config/nvim/config/plugins/language-client.vim
+source ~/.config/nvim/config/plugins/vim-diff-enhanced.vim
+source ~/.config/nvim/config/plugins/vim-go.vim
+source ~/.config/nvim/config/plugins/oceanic-next.vim
 

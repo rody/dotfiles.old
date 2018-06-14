@@ -89,11 +89,14 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR=nvim
 
+export GOPATH=$HOME/go
+
 # add local node modules to the path
 export PATH=./node_modules/.bin:$PATH
 # add Cargo (rust) binaries
 export PATH=$HOME/.cargo/bin:$PATH
-
+# add Golang binaries
+export PATH=$GOPATH/bin:$PATH
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh

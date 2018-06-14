@@ -1,11 +1,13 @@
 if exists('g:plugs["ale"]')
   let g:ale_fixers = {
         \ 'javascript': ['eslint'],
-        \ 'css': ['prettier']
+        \ 'css': ['prettier'],
+        \ 'typescript': ['tslint'],
         \ }
 
   let g:ale_linters = {
-        \ 'rust': ['cargo']
+        \ 'rust': ['cargo'],
+        \ 'typescript': ['tslint']
         \ }
 
   let g:ale_sign_error = '✖︎'

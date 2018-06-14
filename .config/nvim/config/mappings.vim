@@ -22,6 +22,11 @@ nmap <C-W>- :resize -1<CR>
 nmap <C-W>> :vertical resize +1<CR>
 nmap <C-W>< :vertical resize -1<CR>
 
+" Quickfix shortcuts
+map <C-n> :cnext<CR>
+map <C-m> :cprevious<CR>
+nnoremap <leader>a :cclose<CR>
+
 if exists('g:plugs["nerdtree"]')
   nmap <Leader>n :NERDTreeToggle<CR>
 else
@@ -43,3 +48,4 @@ endif
 if exists('g:plugs["ale"]')
   nmap <Leader>f :ALEFix<CR>
 endif
+
