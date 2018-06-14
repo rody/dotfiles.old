@@ -15,7 +15,6 @@ if executable('javascript-typescript-stdio')
   autocmd FileType javascript setlocal omnifunc=LanguageClient#complete
 else
   echo "javascript-typescript-stdio not installed!\n"
-  :cq
 endif
 
 if executable('go-langserver')
@@ -24,5 +23,4 @@ if executable('go-langserver')
   autocmd FileType go setlocal omnifunc=LanguageClient#complete
 else
   echo "go-langserver not installed!\n"
-  :cq
 endif

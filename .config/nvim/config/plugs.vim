@@ -67,7 +67,7 @@ call plug#begin('~/.local/share/nvim/plugged')
   " Golang {{{
   if executable('go')
     Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
-    Plug 'mdempsky/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
+    Plug 'mdempsky/gocode', { 'rtp': 'nvim', 'do': '~/.local/share/nvim/plugged/gocode/nvim/symlink.sh' }
     Plug 'zchee/deoplete-go', { 'do': 'make'}
   endif
 
