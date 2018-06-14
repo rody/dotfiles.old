@@ -1,5 +1,10 @@
 inoremap jk <ESC>
 " vnoremap jk <ESC>
+" Leave using a different command than ESC
+if has("nvim")
+  inoremap <ESC> <C-\><C-n>
+  tnoremap jk <C-\><C-n>
+endif
 
 " Better pasting from the clipboard
 map <Leader>p :set paste<CR>o<ESC>"*]p:set nopaste<CR>
