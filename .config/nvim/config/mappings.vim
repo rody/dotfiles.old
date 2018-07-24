@@ -27,10 +27,13 @@ nmap <C-W>- :resize -1<CR>
 nmap <C-W>> :vertical resize +1<CR>
 nmap <C-W>< :vertical resize -1<CR>
 
-" Quickfix shortcuts
-map <C-n> :cnext<CR>
-map <C-m> :cprevious<CR>
-nnoremap <leader>a :cclose<CR>
+" Location list shortcuts
+map <C-n> :lnext<CR>
+map <C-m> :lprevious<CR>
+nnoremap <leader>a :lclose<CR>
+
+" Open terminal in a split
+nmap <Leader>tt :split<CR>:resize 15<CR>:set wfh<CR>:terminal<CR>:startinsert<CR>
 
 if exists('g:plugs["nerdtree"]')
   nmap <Leader>n :NERDTreeToggle<CR>
