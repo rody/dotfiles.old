@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AlternateMouseScroll</key>
+	<true/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
 	<key>AppleScrollAnimationEnabled</key>
@@ -1620,10 +1622,18 @@
 	<true/>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
+	<key>NSColorPanelMode</key>
+	<string>6</string>
+	<key>NSColorPickerSlidersDefaults</key>
+	<string>1</string>
+	<key>NSFontPanelAttributes</key>
+	<string>1, 4</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>/Volumes/internalHDD/mbadolato-iTerm2-Color-Schemes-7d01cd1/schemes</string>
+	<string>~/colorschemes_iterm</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
-	<string>{1273, 867}</string>
+	<string>{1123, 639}</string>
+	<key>NSNavPanelExpandedSizeForSaveMode</key>
+	<string>{712, 565}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -1639,7 +1649,7 @@
 	gAKACoAN0xAJChEVGVdOUy5rZXlzoxITFIADgASABaMWFxiABoAHgAiACVpJZGVudGlm
 	aWVyVVdpZHRoVkhpZGRlblEwI0BowAAAAAAACNIhIiMkWiRjbGFzc25hbWVYJGNsYXNz
 	ZXNcTlNEaWN0aW9uYXJ5oiMlWE5TT2JqZWN00xAJCicrGaMSExSAA4AEgAWjLC0YgAuA
-	DIAIgAlRMSNAdKGdsi0OVtIhIjM0Xk5TTXV0YWJsZUFycmF5ozM1JVdOU0FycmF5XxAP
+	DIAIgAlRMSNAdKAAAAAAANIhIjM0Xk5TTXV0YWJsZUFycmF5ozM1JVdOU0FycmF5XxAP
 	TlNLZXllZEFyY2hpdmVy0Tg5VUFycmF5gAEACAARABoAIwAtADIANwBGAEwAUQBcAGMA
 	ZgBoAGoAbABzAHsAfwCBAIMAhQCJAIsAjQCPAJEAnACiAKkAqwC0ALUAugDFAM4A2wDe
 	AOcA7gDyAPQA9gD4APwA/gEAAQIBBAEGAQ8BFAEjAScBLwFBAUQBSgAAAAAAAAIBAAAA
@@ -1655,18 +1665,33 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
+	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+	<dict>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+	</dict>
+	<key>NSWindow Frame NSColorPanel</key>
+	<string>427 404 228 297 0 0 1680 1027 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>760 435 864 443 0 0 2560 1417 </string>
+	<string>452 217 732 314 0 0 1680 1050 </string>
+	<key>NSWindow Frame Preferences</key>
+	<string>565 558 606 456 0 0 1680 1027 </string>
+	<key>NSWindow Frame ProfilesPanel</key>
+	<string>275 639 735 382 0 0 1680 1050 </string>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>563 1746 400 129 -517 1050 2560 1057 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>970 768 620 392 0 0 2560 1417 </string>
+	<string>530 477 620 392 0 0 1680 1027 </string>
+	<key>NSWindow Frame SessionsPreferences</key>
+	<string>-28 1413 606 469 -517 1280 2560 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>164 769 928 394 0 0 2560 1417 </string>
+	<string>618 574 796 473 0 0 1680 1050 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
-	<string>230 833 592 584 0 0 2560 1417 </string>
+	<string>127 443 592 584 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1399 484 1034 894 0 0 2560 1417 </string>
+	<string>0 4 650 452 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1390 166 585 452 0 0 2560 1417 </string>
+	<string>254 514 650 452 0 0 1680 1050 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2310,18 +2335,109 @@
 			<string>/Users/rody</string>
 		</dict>
 	</array>
+	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
+	<true/>
+	<key>NoSyncConfirmBeta</key>
+	<true/>
+	<key>NoSyncHaveWarnedAboutIncompatibleSoftware</key>
+	<true/>
 	<key>NoSyncHaveWarnedAboutPasteConfirmationChange</key>
 	<true/>
 	<key>NoSyncInstallationId</key>
-	<string>3961F35E-9D05-4CD3-A8C5-1F3557182B25</string>
+	<string>6CB6E639-BD75-4C3E-9C2A-49A2FF352ABF</string>
+	<key>NoSyncLastTipTime</key>
+	<real>523850810.84786999</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
 	<key>NoSyncPermissionToShowTip</key>
-	<false/>
+	<true/>
+	<key>NoSyncSilenceAnnoyingBellAutomatically</key>
+	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
-	<real>532562182.13754898</real>
+	<real>465830095.17368102</real>
+	<key>NoSyncTimeOfLastPromo</key>
+	<real>453329180.91495198</real>
+	<key>NoSyncTimeOfLastPromoDownload</key>
+	<real>456770109.98727</real>
+	<key>NoSyncTipsToNotShow</key>
+	<array>
+		<string>000</string>
+		<string>0000</string>
+		<string>0001</string>
+		<string>0002</string>
+		<string>0003</string>
+		<string>0004</string>
+		<string>0005</string>
+		<string>0006</string>
+		<string>0007</string>
+		<string>0008</string>
+		<string>0009</string>
+		<string>0010</string>
+		<string>0011</string>
+		<string>0012</string>
+		<string>0013</string>
+		<string>0014</string>
+		<string>0015</string>
+		<string>0016</string>
+		<string>0017</string>
+		<string>0018</string>
+		<string>0019</string>
+		<string>0020</string>
+		<string>0021</string>
+		<string>0022</string>
+		<string>0021</string>
+		<string>0023</string>
+		<string>0024</string>
+		<string>0025</string>
+		<string>0026</string>
+		<string>0027</string>
+		<string>0028</string>
+		<string>0029</string>
+		<string>0030</string>
+		<string>0031</string>
+		<string>0032</string>
+		<string>0033</string>
+		<string>0034</string>
+		<string>0035</string>
+		<string>0036</string>
+		<string>0037</string>
+		<string>0038</string>
+		<string>0039</string>
+		<string>0040</string>
+		<string>0041</string>
+		<string>0042</string>
+		<string>0043</string>
+		<string>0044</string>
+		<string>0045</string>
+		<string>0046</string>
+		<string>0047</string>
+		<string>0048</string>
+		<string>0049</string>
+		<string>0050</string>
+		<string>0051</string>
+		<string>0052</string>
+		<string>0053</string>
+		<string>0054</string>
+		<string>0055</string>
+		<string>0056</string>
+		<string>0057</string>
+		<string>0058</string>
+		<string>0059</string>
+		<string>0060</string>
+		<string>0061</string>
+		<string>0062</string>
+		<string>0063</string>
+		<string>0064</string>
+		<string>0065</string>
+		<string>0066</string>
+		<string>0067</string>
+		<string>0068</string>
+		<string>0069</string>
+		<string>0070</string>
+		<string>0071</string>
+	</array>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -2362,15 +2478,17 @@
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final.xml?shard=27</string>
+	<string>https://iterm2.com/appcasts/final.xml?shard=10</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-05-16T08:15:25Z</date>
-	<key>SUSendProfileInfo</key>
+	<date>2018-07-20T05:10:31Z</date>
+	<key>SUSkippedVersion</key>
+	<string>3.1.7</string>
+	<key>ShowFullScreenTabBar</key>
 	<false/>
 	<key>UKCrashReporterLastCrashReportDate</key>
-	<real>1524871040</real>
+	<real>1475413632</real>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
