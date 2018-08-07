@@ -111,6 +111,13 @@ alias config='/usr/bin/git --git-dir=/Users/rody/.cfg/ --work-tree=/Users/rody'
 alias show_hidden='defaults write com.apple.Finder AppleShowAllFiles YES && killall Finder'
 alias hide_hidden='defaults write com.apple.Finder AppleShowAllFiles NO && killall Finder'
 
+# sfdx aliases
+alias sfpush='sfdx force:source:push'
+alias sfpull='sfdx force:source:pull'
+alias sfstatus='sfdx force:source:status'
+alias sfst='sfdx force:source:status'
+alias sfcreate='sfdx force:org:create -s -f config/project-scratch-def.json -a '
+
 # VIM mode
 bindkey -v
 bindkey -M viins 'jk' vi-cmd-mode
