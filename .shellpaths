@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# my scripts
+export PATH=$PATH:.
+
+# homebrew
+export PATH=/usr/local/sbin:$PATH
+export PATH=/usr/local/bin:$PATH
+
+# GO
+export PATH=$GOPATH/bin:$PATH
+
+# Rust (Cargo)
+export PATH=$HOME/.cargo/bin:$PATH
+
+# NodeJS
+export PATH=./node_modules/.bin:$PATH
+

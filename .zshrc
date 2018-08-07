@@ -7,8 +7,8 @@ export ZSH=$HOME/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-#ZSH_THEME="robbyrussell"
-ZSH_THEME="agkozak"
+ZSH_THEME="robbyrussell"
+#ZSH_THEME="agkozak"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -89,17 +89,6 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-export EDITOR=nvim
-
-export GOPATH=$HOME/go
-
-# add local node modules to the path
-export PATH=./node_modules/.bin:$PATH
-# add Cargo (rust) binaries
-export PATH=$HOME/.cargo/bin:$PATH
-# add Golang binaries
-export PATH=$GOPATH/bin:$PATH
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -108,14 +97,7 @@ export PATH=$GOPATH/bin:$PATH
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias config='/usr/bin/git --git-dir="$HOME/.cfg/" --work-tree="$HOME"'
-
-# sfdx aliases
-alias sfpush='sfdx force:source:push'
-alias sfpull='sfdx force:source:pull'
-alias sfstatus='sfdx force:source:status'
-alias sfst='sfdx force:source:status'
-alias sfcreate='sfdx force:org:create -s -f config/project-scratch-def.json -a '
+source ~/.shellaliases
 
 # VIM mode
 bindkey -v
