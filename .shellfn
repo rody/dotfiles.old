@@ -17,3 +17,11 @@ function curltime(){
 function weather() {
   curl wttr.in/$1
 }
+
+function enable_unidentified_apps() {
+  sudo spctl --master-disable
+}
+
+function disable_unidentified_apps() {
+  sudo spctl --master-enable
+}
