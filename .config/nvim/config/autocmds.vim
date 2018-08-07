@@ -55,4 +55,10 @@ if has("autocmd")
     autocmd!
     autocmd FileType gitconfig setlocal tabstop=4 smartindent noexpandtab
   augroup END
+
+  augroup makefile
+    autocmd!
+    autocmd FileType make setlocal noexpandtab shiftwidth=8 softtabstop=0
+  augroup END
+
 endif

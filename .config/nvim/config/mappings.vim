@@ -27,6 +27,9 @@ nmap <C-W>- :resize -1<CR>
 nmap <C-W>> :vertical resize +1<CR>
 nmap <C-W>< :vertical resize -1<CR>
 
+" make current window fullscreen (use :tabclose to close the new tab)
+nmap <Leader>fs :tabnew %<CR>
+
 " Location list shortcuts
 map <C-n> :lnext<CR>
 map <C-m> :lprevious<CR>
