@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 ## -----------------------------------------------------------------------------
 # iTerm2
@@ -9,3 +9,37 @@ defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.prefs/i
 
 # Tell iTerm2 to use the custom preferences in the directory
 defaults write com.googlecode.iterm2.plist LoadPrefsFromCustomFolder -bool true
+
+
+## -----------------------------------------------------------------------------
+# Screensaver
+## -----------------------------------------------------------------------------
+
+# Aerial as the default screensaver
+if [ -d "${HOME}/Library/Screen Savers/Aerial.saver" ]; then
+  defaults -currentHost write com.apple.screensaver moduleDict -dict moduleName Aerial path "${HOME}/Library/Screen Savers/Aerial.saver" type 0
+fi
+
+## -----------------------------------------------------------------------------
+# Dock
+## -----------------------------------------------------------------------------
+
+# auto-hide the dock
+defaults write com.apple.dock autohide -int 1
+
+# enable magnification
+defaults write com.apple.dock magnification -int 1
+
+
+
+######
+# restart affected apps
+
+APPS=(
+  "Dock"
+)
+
+for app in "${APPS[@]}"; do
+  printf "Restarting %s\\n" "$app"
+  killall "$app"
+done
