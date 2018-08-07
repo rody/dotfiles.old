@@ -2,13 +2,13 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/rody/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-#ZSH_THEME="robbyrussell"
-ZSH_THEME="agkozak"
+ZSH_THEME="robbyrussell"
+#ZSH_THEME="agkozak"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -45,7 +45,7 @@ ZSH_THEME="agkozak"
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -61,6 +61,8 @@ ZSH_THEME="agkozak"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  httpie
+  osx
   vi-mode
   z
 )
@@ -87,17 +89,6 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-export EDITOR=nvim
-
-export GOPATH=$HOME/go
-
-# add local node modules to the path
-export PATH=./node_modules/.bin:$PATH
-# add Cargo (rust) binaries
-export PATH=$HOME/.cargo/bin:$PATH
-# add Golang binaries
-export PATH=$GOPATH/bin:$PATH
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -106,20 +97,14 @@ export PATH=$GOPATH/bin:$PATH
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias config='/usr/bin/git --git-dir=/Users/rody/.cfg/ --work-tree=/Users/rody'
-# Show/Hide hidden files in Finder
-alias show_hidden='defaults write com.apple.Finder AppleShowAllFiles YES && killall Finder'
-alias hide_hidden='defaults write com.apple.Finder AppleShowAllFiles NO && killall Finder'
-
-# sfdx aliases
-alias sfpush='sfdx force:source:push'
-alias sfpull='sfdx force:source:pull'
-alias sfstatus='sfdx force:source:status'
-alias sfst='sfdx force:source:status'
-alias sfcreate='sfdx force:org:create -s -f config/project-scratch-def.json -a '
+source ~/.shellaliases
 
 # VIM mode
 bindkey -v
 bindkey -M viins 'jk' vi-cmd-mode
 
+# Fzf integration
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# iTerm2 shell integration
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

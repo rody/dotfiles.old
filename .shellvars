@@ -1,0 +1,6 @@
+#!/bin/sh
+
+export EDITOR="nvim"
+bindkey -v
+
+export GOPATH=~/go

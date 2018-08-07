@@ -64,6 +64,11 @@ brew "python2"
 brew "python3"
 brew "netcat"
 brew "pwgen"
+brew "dos2unix"
+brew "htop"
+brew "httpie"
+brew "todo-txt"
+brew "gawk"
 
 # casks ------------------------------------------------------------------------
 cask "avidemux"
@@ -102,6 +107,7 @@ cask "xquartz"
 cask "duet"
 cask "google-hangouts"
 cask "handbrake"
+cask "sfdx"
 
 # Quicklook --------------------------------------------------------------------
 cask "qlcolorcode"
