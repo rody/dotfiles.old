@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/rody/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -45,7 +45,7 @@ ZSH_THEME="agkozak"
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -61,6 +61,8 @@ ZSH_THEME="agkozak"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  httpie
+  osx
   vi-mode
   z
 )
@@ -106,10 +108,7 @@ export PATH=$GOPATH/bin:$PATH
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias config='/usr/bin/git --git-dir=/Users/rody/.cfg/ --work-tree=/Users/rody'
-# Show/Hide hidden files in Finder
-alias show_hidden='defaults write com.apple.Finder AppleShowAllFiles YES && killall Finder'
-alias hide_hidden='defaults write com.apple.Finder AppleShowAllFiles NO && killall Finder'
+alias config='/usr/bin/git --git-dir="$HOME/.cfg/" --work-tree="$HOME"'
 
 # sfdx aliases
 alias sfpush='sfdx force:source:push'
@@ -122,4 +121,8 @@ alias sfcreate='sfdx force:org:create -s -f config/project-scratch-def.json -a '
 bindkey -v
 bindkey -M viins 'jk' vi-cmd-mode
 
+# Fzf integration
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# iTerm2 shell integration
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
