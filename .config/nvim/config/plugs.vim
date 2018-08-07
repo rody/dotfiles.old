@@ -27,10 +27,10 @@ call plug#begin('~/.local/share/nvim/plugged')
   " Autocomplete {{{
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'fszymanski/deoplete-emoji'
-  Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
+  " Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 
   " splitjoin
-  Plug 'AndrewRadev/splitjoin.vim'
+  " Plug 'AndrewRadev/splitjoin.vim'
 
   " Display function signature in the command line after completion
   Plug 'Shougo/echodoc.vim'
@@ -81,19 +81,19 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'elzr/vim-json'
 
   " Concourse Pipeline {{{
-  Plug 'luan/vim-concourse'
+  " Plug 'luan/vim-concourse'
 
   " Colorschemes {{{
   Plug 'mhartington/oceanic-next'
 
   " AntlR {{{
-  Plug 'jrozner/vim-antlr'
+  " Plug 'jrozner/vim-antlr'
 
   " Comments
   Plug 'scrooloose/nerdcommenter'
 
   " Jenkinsfile
-  Plug 'martinda/Jenkinsfile-vim-syntax'
+  " Plug 'martinda/Jenkinsfile-vim-syntax'
 
 " Initialize plugin system
 call plug#end()
