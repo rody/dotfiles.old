@@ -1,3 +1,5 @@
+set timeoutlen=200 ttimeoutlen=0
+
 inoremap jk <ESC>
 vnoremap jk <ESC>
 " Leave using a different command than ESC
