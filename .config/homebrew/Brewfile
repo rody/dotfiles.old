@@ -31,6 +31,15 @@ brew "zsh"
 brew "zsh-completions"
 
 # brews ------------------------------------------------------------------------
+brew "dep"
+brew "git-quick-stats"
+brew "jpegoptim"
+brew "svgo"
+brew "vim"
+brew "watch"
+brew "z"
+brew "make"
+brew "socat"
 brew "tldr"
 brew "openssl"
 brew "curl"
@@ -68,7 +77,7 @@ brew "dos2unix"
 brew "htop"
 brew "httpie"
 brew "todo-txt"
-brew "gawk"
+brew "csvkit"
 
 # casks ------------------------------------------------------------------------
 cask "avidemux"
@@ -108,6 +117,13 @@ cask "duet"
 cask "google-hangouts"
 cask "handbrake"
 cask "sfdx"
+cask "opera"
+cask "openemu"
+cask "colorpicker-materialdesign"
+cask "java8"
+cask "postman"
+cask "discord"
+cask "hammerspoon"
 
 # Quicklook --------------------------------------------------------------------
 cask "qlcolorcode"
@@ -122,12 +138,12 @@ cask "quicklookase"
 cask "qlvideo"
 
 # fonts ------------------------------------------------------------------------
-cask "caskroom/fonts/font-droidsansmono-nerd-font"
-cask "caskroom/fonts/font-droidsansmono-nerd-font-mono"
-cask "caskroom/fonts/font-firacode-nerd-font"
-cask "caskroom/fonts/font-firacode-nerd-font-mono"
-cask "caskroom/fonts/font-firamono-nerd-font"
-cask "caskroom/fonts/font-firamono-nerd-font-mono"
+cask "font-droidsansmono-nerd-font"
+cask "font-droidsansmono-nerd-font-mono"
+cask "font-firacode-nerd-font"
+cask "font-firacode-nerd-font-mono"
+cask "font-firamono-nerd-font"
+cask "font-firamono-nerd-font-mono"
 
 # app store apps ---------------------------------------------------------------
 mas "Magnet", id: 441258766
