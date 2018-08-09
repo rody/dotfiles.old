@@ -1,6 +1,8 @@
 #!/bin/sh
 
 export EDITOR="nvim"
-bindkey -v
 
 export GOPATH=~/go
+
+# Tell less not to paginate if less than one page
+export LESS="-F -X -R"
