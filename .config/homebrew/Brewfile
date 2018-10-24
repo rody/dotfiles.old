@@ -6,6 +6,7 @@ tap "caskroom/fonts"
 tap "caskroom/versions"
 tap "homebrew/bundle"
 tap "homebrew/core"
+tap "homebrew/cask-fonts"
 
 # dependencies -----------------------------------------------------------------
 brew "coreutils"
@@ -78,6 +79,7 @@ brew "htop"
 brew "httpie"
 brew "todo-txt"
 brew "csvkit"
+brew "asciinema"
 
 # casks ------------------------------------------------------------------------
 cask "avidemux"
@@ -125,6 +127,7 @@ cask "postman"
 cask "discord"
 cask "hammerspoon"
 cask "musescore"
+cask "vcv-rack"
 
 # Quicklook --------------------------------------------------------------------
 cask "qlcolorcode"

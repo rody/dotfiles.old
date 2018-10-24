@@ -6,6 +6,7 @@ if has("autocmd")
     autocmd BufNewFile,BufRead swagger.yml,swagger.yaml set filetype=swagger-yaml.yaml
     autocmd BufNewFile,BufRead swagger.json set filetype=swagger-json.json
     autocmd BufNewFile,BufRead .babelrc set filetype=json
+    autocmd BufNewFile,BufRead *.cls set filetype=java
   augroup END
 
   " omnifunc
@@ -30,6 +31,14 @@ if has("autocmd")
   augroup autoreload
     autocmd!
     autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * checktime
+  augroup END
+
+  augroup python
+    autocmd!
+    autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+    autocmd FileType python setlocal tabstop=4 softtabstop=4 shiftwidth=4 textwidth=79 expandtab autoindent fileformat=unix
+    autocmd FileType python setlocal formatprg=yapf
+    autocmd FileType python setlocal equalprg=yapf
   augroup END
 
   augroup golang
