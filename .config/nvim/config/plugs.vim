@@ -77,6 +77,9 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'sebastianmarkow/deoplete-rust'
   endif
 
+  " Python
+  Plug 'zchee/deoplete-jedi'
+
   " JSON {{{
   Plug 'elzr/vim-json'
 
@@ -94,6 +97,9 @@ call plug#begin('~/.local/share/nvim/plugged')
 
   " Jenkinsfile
   " Plug 'martinda/Jenkinsfile-vim-syntax'
+
+  " Processing
+  Plug 'sophacles/vim-processing'
 
 " Initialize plugin system
 call plug#end()
