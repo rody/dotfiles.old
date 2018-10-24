@@ -124,6 +124,7 @@ cask "java8"
 cask "postman"
 cask "discord"
 cask "hammerspoon"
+cask "musescore"
 
 # Quicklook --------------------------------------------------------------------
 cask "qlcolorcode"
