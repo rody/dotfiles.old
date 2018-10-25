@@ -62,7 +62,7 @@ alias pbcopynn='tr -d "\n" | pbcopy'
 alias reload="exec \$SHELL -l"
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='echo "sofware update...\n"; sudo softwareupdate -i -a; echo "brew update...\n"; brew update; brew upgrade; brew cleanup; echo "brew cask update...\n"; brew cask upgrade; brew cask cleanup; echo "mas update...\n"; mas upgrade;'
+alias update='echo "sofware update...\n"; sudo softwareupdate -i -a; echo "brew update...\n"; brew update; brew upgrade; echo "brew cask update...\n"; brew cask upgrade; brew cleanup; echo "mas update...\n"; mas upgrade;'
 
 alias jsonfix="pbpaste | jq . | pbcopy"
 
