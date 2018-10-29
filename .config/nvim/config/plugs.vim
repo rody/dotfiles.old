@@ -27,7 +27,7 @@ call plug#begin('~/.local/share/nvim/plugged')
   " Autocomplete {{{
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'fszymanski/deoplete-emoji'
-  " Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
+  Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 
   " splitjoin
   " Plug 'AndrewRadev/splitjoin.vim'
@@ -63,11 +63,13 @@ call plug#begin('~/.local/share/nvim/plugged')
 
   " CSS {{{
   " Plug 'othree/csscomplete.vim'
+  Plug 'hail2u/vim-css3-syntax'
+  Plug 'ap/vim-css-color'
 
   " Golang {{{
   if executable('go')
     Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
-    Plug 'mdempsky/gocode', { 'rtp': 'nvim', 'do': '~/.local/share/nvim/plugged/gocode/nvim/symlink.sh' }
+    Plug 'stamblerre/gocode', { 'rtp': 'nvim', 'do': '~/.local/share/nvim/plugged/gocode/nvim/symlink.sh' }
     Plug 'zchee/deoplete-go', { 'do': 'make'}
   endif
 
@@ -107,6 +109,7 @@ call plug#end()
 filetype indent plugin on
 syntax on
 
+source ~/.config/nvim/config/plugins/language-client.vim
 source ~/.config/nvim/config/plugins/deoplete.vim
 source ~/.config/nvim/config/plugins/tern_for_vim.vim
 source ~/.config/nvim/config/plugins/ale.vim
@@ -115,7 +118,6 @@ source ~/.config/nvim/config/plugins/html5.vim
 source ~/.config/nvim/config/plugins/vim-jsx.vim
 source ~/.config/nvim/config/plugins/nerdtree.vim
 source ~/.config/nvim/config/plugins/fzf.vim
-source ~/.config/nvim/config/plugins/language-client.vim
 source ~/.config/nvim/config/plugins/vim-diff-enhanced.vim
 source ~/.config/nvim/config/plugins/vim-go.vim
 source ~/.config/nvim/config/plugins/oceanic-next.vim
