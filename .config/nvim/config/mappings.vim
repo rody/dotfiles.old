@@ -11,6 +11,9 @@ endif
 " Better pasting from the clipboard
 map <Leader>p :set paste<CR>o<ESC>"*]p:set nopaste<CR>
 
+" yank the whole buffer
+map <leader>yy mzgg"+yG`z
+
 "clear search highlight
 map <Leader>h :nohlsearch<CR>
 
@@ -41,6 +44,9 @@ nnoremap <leader>a :lclose<CR>
 nmap <Leader>tt :split<CR>:resize 15<CR>:set wfh<CR>:terminal<CR>:startinsert<CR>
 
 if exists('g:plugs["nerdtree"]')
+  " open NERDTree on the current file
+  nmap <Leader>m :NERDTreeFind<CR>
+  " open NERDTree on the current file
   nmap <Leader>n :NERDTreeToggle<CR>
 else
   nmap <Leader>n :Lexplore<CR>
@@ -62,3 +68,11 @@ if exists('g:plugs["ale"]')
   nmap <Leader>f :ALEFix<CR>
 endif
 
+
+if exists('g:plugs["goyo.vim"]')
+  nmap <leader>g :Goyo<CR>
+endif
+
+if exists('g:plugs["limelight.vim"]')
+  nmap <Leader>l :Limelight!! 0.6
+endif

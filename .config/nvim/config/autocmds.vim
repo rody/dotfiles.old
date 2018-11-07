@@ -6,7 +6,6 @@ if has("autocmd")
     autocmd BufNewFile,BufRead swagger.yml,swagger.yaml set filetype=swagger-yaml.yaml
     autocmd BufNewFile,BufRead swagger.json set filetype=swagger-json.json
     autocmd BufNewFile,BufRead .babelrc set filetype=json
-    autocmd BufNewFile,BufRead *.cls set filetype=java
   augroup END
 
   " omnifunc

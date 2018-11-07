@@ -29,6 +29,10 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'fszymanski/deoplete-emoji'
   Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 
+  " Distraction-free
+  Plug 'junegunn/goyo.vim'
+  Plug 'junegunn/limelight.vim'
+
   " splitjoin
   " Plug 'AndrewRadev/splitjoin.vim'
 
@@ -45,20 +49,19 @@ call plug#begin('~/.local/share/nvim/plugged')
   " Helpers
   Plug 'tpope/vim-surround'
 
+  " A solid language pack for Vim
+  Plug 'sheerun/vim-polyglot'
+
   " Javascript {{{
   if executable('npm')
     Plug 'ternjs/tern_for_vim', { 'do': 'npm install && npm install -g tern'}
     Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
   endif
-  Plug 'pangloss/vim-javascript'
-  Plug 'mxw/vim-jsx'
 
   " Typescript
-  Plug 'HerringtonDarkholme/yats.vim'
   Plug 'mhartington/nvim-typescript', { 'do': './install.sh' }
 
   " HTML {{{
-  Plug 'othree/html5.vim'
   Plug 'mattn/emmet-vim'
 
   " CSS {{{
@@ -91,14 +94,14 @@ call plug#begin('~/.local/share/nvim/plugged')
   " Colorschemes {{{
   Plug 'mhartington/oceanic-next'
 
+  " Apex syntax
+  Plug 'ejholmes/vim-forcedotcom'
+
   " AntlR {{{
   " Plug 'jrozner/vim-antlr'
 
   " Comments
   Plug 'scrooloose/nerdcommenter'
-
-  " Jenkinsfile
-  " Plug 'martinda/Jenkinsfile-vim-syntax'
 
   " Processing
   Plug 'sophacles/vim-processing'
@@ -121,4 +124,6 @@ source ~/.config/nvim/config/plugins/fzf.vim
 source ~/.config/nvim/config/plugins/vim-diff-enhanced.vim
 source ~/.config/nvim/config/plugins/vim-go.vim
 source ~/.config/nvim/config/plugins/oceanic-next.vim
+source ~/.config/nvim/config/plugins/goyo.vim
+source ~/.config/nvim/config/plugins/limelight.vim
 

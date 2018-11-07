@@ -32,3 +32,6 @@ if exists('g:plugs["oceanic-next"]')
 endif
 
 highlight WhiteSpace guifg=#343c41
+
+" hide 'end of buffer' char (~)
+highlight EndOfBuffer guifg=bg ctermfg=bg
