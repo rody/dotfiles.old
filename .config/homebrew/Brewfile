@@ -128,6 +128,7 @@ cask "discord"
 cask "hammerspoon"
 cask "musescore"
 cask "vcv-rack"
+cask "openshot-video-editor"
 
 # Quicklook --------------------------------------------------------------------
 cask "qlcolorcode"
