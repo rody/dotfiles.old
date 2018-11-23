@@ -74,6 +74,7 @@ call plug#begin('~/.local/share/nvim/plugged')
     Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
     Plug 'stamblerre/gocode', { 'rtp': 'nvim', 'do': '~/.local/share/nvim/plugged/gocode/nvim/symlink.sh' }
     Plug 'zchee/deoplete-go', { 'do': 'make'}
+    Plug 'sebdah/vim-delve'
   endif
 
   " Rust {{{
@@ -126,4 +127,4 @@ source ~/.config/nvim/config/plugins/vim-go.vim
 source ~/.config/nvim/config/plugins/oceanic-next.vim
 source ~/.config/nvim/config/plugins/goyo.vim
 source ~/.config/nvim/config/plugins/limelight.vim
-
+source ~/.config/nvim/config/plugins/vim-delve.vim
