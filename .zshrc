@@ -103,6 +103,9 @@ source ~/.profile
 bindkey -v
 bindkey -M viins 'jk' vi-cmd-mode
 
+# zsh completion
+fpath=(/usr/local/share/zsh-completions $fpath)
+
 # Fzf integration
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
