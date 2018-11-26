@@ -49,8 +49,6 @@ call plug#begin('~/.local/share/nvim/plugged')
   " Helpers
   Plug 'tpope/vim-surround'
 
-  " A solid language pack for Vim
-  Plug 'sheerun/vim-polyglot'
 
   " Javascript {{{
   if executable('npm')
@@ -90,7 +88,10 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'elzr/vim-json'
 
   " Concourse Pipeline {{{
-  " Plug 'luan/vim-concourse'
+  Plug 'luan/vim-concourse'
+
+  " A solid language pack for Vim
+  Plug 'sheerun/vim-polyglot'
 
   " Colorschemes {{{
   Plug 'mhartington/oceanic-next'
@@ -124,6 +125,7 @@ source ~/.config/nvim/config/plugins/nerdtree.vim
 source ~/.config/nvim/config/plugins/fzf.vim
 source ~/.config/nvim/config/plugins/vim-diff-enhanced.vim
 source ~/.config/nvim/config/plugins/vim-go.vim
+source ~/.config/nvim/config/plugins/vim-polyglot.vim
 source ~/.config/nvim/config/plugins/oceanic-next.vim
 source ~/.config/nvim/config/plugins/goyo.vim
 source ~/.config/nvim/config/plugins/limelight.vim
