@@ -69,4 +69,9 @@ if has("autocmd")
     autocmd FileType make setlocal noexpandtab shiftwidth=8 softtabstop=0
   augroup END
 
+  augroup folding
+    autocmd!
+    autocmd FileType json setlocal foldmethod=syntax foldlevel=20
+  augroup END
+
 endif
