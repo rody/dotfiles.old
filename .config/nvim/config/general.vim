@@ -95,6 +95,15 @@ function! GetCurrentMode(exclude, show)
   endif
 endfunction
 
+function! GitBranch()
+  return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
+endfunction
+
+function! StatuslineGit()
+  let l:branchname = GitBranch()
+  return strlen(l:branchname) > 0?'  '.l:branchname.' ':''
+endfunction
+
 highlight User1 ctermbg=Blue ctermfg=White guibg=Blue
 
 set laststatus=2
@@ -104,6 +113,7 @@ set statusline+=%h%w%q
 set statusline+=\ %.20f
 set statusline+=\ \ %#Error#%{GetCurrentMode('NORMAL',0)}%*
 set statusline+=%{GetCurrentMode('NORMAL',1)}
+set statusline+=%#todo#%{StatuslineGit()}
 set statusline+=\ %=                            " align left
 set statusline+=%r
 set statusline+=\ [
